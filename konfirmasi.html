@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CINEMAXE — Konfirmasi Pesanan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="filmstrip top" aria-hidden="true">
+    <div class="filmstrip-holes"></div>
+    <div class="filmstrip-track"><span>CINEMAXE</span><span>NOW SHOWING</span><span>CINEMAXE</span><span>NOW SHOWING</span><span>CINEMAXE</span><span>NOW SHOWING</span><span>CINEMAXE</span><span>NOW SHOWING</span></div>
+    <div class="filmstrip-holes"></div>
+  </div>
+
+  <nav class="main-nav">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand">CINEMAXE</a>
+      <div class="nav-links">
+        <a href="index.html" class="nl">Beranda</a>
+        <a href="tayang.html" class="nl">Jadwal Tayang</a>
+        <a href="pesan.html" class="nl">Pesan Tiket</a>
+        <a href="konfirmasi.html" class="nl active">Riwayat</a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Beranda</a>
+      <a href="tayang.html">Jadwal Tayang</a>
+      <a href="pesan.html">Pesan Tiket</a>
+      <a href="konfirmasi.html">Riwayat</a>
+    </div>
+  </nav>
+
+  <div class="page-header" style="padding-bottom: 40px;">
+    <div class="container text-center">
+      <div class="success-icon">✓</div>
+      <h1 class="ph-title">PESANAN BERHASIL!</h1>
+      <p class="ph-sub">Tiket bioskop Anda telah dikonfirmasi. Selamat menonton!</p>
+    </div>
+  </div>
+
+  <!-- TICKET DISPLAY -->
+  <section class="konfirmasi-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+
+          <!-- TIKET VISUAL -->
+          <div class="ticket-card">
+            <div class="ticket-top">
+              <div class="ticket-brand">CINEMAXE</div>
+              <div class="ticket-film">AVENGERS: DOOMSDAY</div>
+              <div class="ticket-tagline"><em>The Ultimate Marvel Event</em></div>
+              <div class="ticket-meta-row">
+                <div class="ticket-meta-item">
+                  <span class="tmi-label">TANGGAL</span>
+                  <span class="tmi-val">Senin, 20 Apr 2025</span>
+                </div>
+                <div class="ticket-meta-item">
+                  <span class="tmi-label">JAM</span>
+                  <span class="tmi-val">16:15 WIB</span>
+                </div>
+                <div class="ticket-meta-item">
+                  <span class="tmi-label">STUDIO</span>
+                  <span class="tmi-val">Dolby Atmos</span>
+                </div>
+              </div>
+              <div class="ticket-meta-row">
+                <div class="ticket-meta-item">
+                  <span class="tmi-label">KURSI</span>
+                  <span class="tmi-val">C3, C4</span>
+                </div>
+                <div class="ticket-meta-item">
+                  <span class="tmi-label">TIKET</span>
+                  <span class="tmi-val">2x Dewasa</span>
+                </div>
+                <div class="ticket-meta-item">
+                  <span class="tmi-label">TOTAL</span>
+                  <span class="tmi-val gold">Rp 120.000</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PERFORATION -->
+            <div class="ticket-perf">
+              <div class="perf-circle left"></div>
+              <div class="perf-line"></div>
+              <div class="perf-circle right"></div>
+            </div>
+
+            <div class="ticket-bottom">
+              <div class="ticket-code-section">
+                <div class="qr-placeholder">
+                  <div class="qr-inner">QR</div>
+                </div>
+                <div class="ticket-code-info">
+                  <span class="tc-label">KODE BOOKING</span>
+                  <span class="tc-code">CXE-2025-0042</span>
+                  <span class="tc-label mt-2">ATAS NAMA</span>
+                  <span class="tc-name">MAHASISWA PDW</span>
+                  <span class="tc-note">Tunjukkan tiket ini di pintu masuk studio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIWAYAT PEMESANAN -->
+          <div class="form-block mt-5">
+            <div class="fb-header"><span class="fb-num">✦</span><h3>RIWAYAT PEMESANAN</h3></div>
+            <div class="history-list">
+              <div class="history-item active">
+                <div class="hi-dot"></div>
+                <div class="hi-info">
+                  <span class="hi-title">Avengers: Doomsday</span>
+                  <span class="hi-sub">20 Apr 2025 · 16:15 · Kursi C3, C4</span>
+                </div>
+                <span class="hi-badge paid">LUNAS</span>
+              </div>
+              <div class="history-item">
+                <div class="hi-dot dim"></div>
+                <div class="hi-info">
+                  <span class="hi-title">Mission: Impossible 8</span>
+                  <span class="hi-sub">12 Apr 2025 · 19:30 · Kursi A5</span>
+                </div>
+                <span class="hi-badge paid">LUNAS</span>
+              </div>
+              <div class="history-item">
+                <div class="hi-dot dim"></div>
+                <div class="hi-info">
+                  <span class="hi-title">Sinners</span>
+                  <span class="hi-sub">5 Apr 2025 · 13:00 · Kursi E2, E3</span>
+                </div>
+                <span class="hi-badge expired">SELESAI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="d-flex flex-wrap gap-3 justify-content-center mt-5">
+            <a href="pesan.html" class="btn-gold">PESAN LAGI →</a>
+            <a href="tayang.html" class="btn-ghost">LIHAT JADWAL TAYANG</a>
+            <a href="index.html" class="btn-back-cinema">← Ke Beranda</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="filmstrip bottom" aria-hidden="true">
+    <div class="filmstrip-holes"></div>
+    <div class="filmstrip-track"><span>ENJOY THE SHOW</span><span>★</span><span>ENJOY THE SHOW</span><span>★</span><span>ENJOY THE SHOW</span><span>★</span><span>ENJOY THE SHOW</span><span>★</span></div>
+    <div class="filmstrip-holes"></div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <span class="footer-brand">CINEMAXE</span>
+      <span class="footer-copy">© 2025 · Tugas Praktikum PDW Modul 7</span>
+      <div class="d-flex gap-3">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="tayang.html" class="footer-link">Jadwal Tayang</a>
+        <a href="pesan.html" class="footer-link">Pesan</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

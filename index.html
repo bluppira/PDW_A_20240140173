@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CINEMAXE — Pesan Tiket</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- FILM STRIP DECO TOP -->
+  <div class="filmstrip top" aria-hidden="true">
+    <div class="filmstrip-holes"></div>
+    <div class="filmstrip-track"><span>CINEMAXE</span><span>NOW SHOWING</span><span>CINEMAXE</span><span>NOW SHOWING</span><span>CINEMAXE</span><span>NOW SHOWING</span><span>CINEMAXE</span><span>NOW SHOWING</span><span>CINEMAXE</span></div>
+    <div class="filmstrip-holes"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="main-nav">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand">CINEMAXE</a>
+      <div class="nav-links">
+        <a href="index.html" class="nl active">Beranda</a>
+        <a href="tayang.html" class="nl">Jadwal Tayang</a>
+        <a href="pesan.html" class="nl">Pesan Tiket</a>
+        <a href="konfirmasi.html" class="nl">Riwayat</a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Beranda</a>
+      <a href="tayang.html">Jadwal Tayang</a>
+      <a href="pesan.html">Pesan Tiket</a>
+      <a href="konfirmasi.html">Riwayat</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-scanlines" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="hero-eyebrow">✦ NOW SHOWING ✦</p>
+      <h1 class="hero-title">LAYAR<br/><em>KECIL
+        
+      </em></h1>
+      <p class="hero-sub">Pesan tiket bioskop favoritmu dalam hitungan detik.<br/>Pilih kursi, pilih waktu — pengalaman sinema dimulai di sini.</p>
+      <div class="hero-cta">
+        <a href="pesan.html" class="btn-gold">PESAN TIKET SEKARANG</a>
+        <a href="tayang.html" class="btn-ghost">LIHAT JADWAL Tayang →</a>
+      </div>
+      <div class="hero-ticker">
+        <span>AVENGERS: DOOMSDAY</span>
+        <span class="dot">◆</span>
+        <span>MISSION IMPOSSIBLE 8</span>
+        <span class="dot">◆</span>
+        <span>SUPERMAN 2025</span>
+        <span class="dot">◆</span>
+        <span>AVATAR 3</span>
+        <span class="dot">◆</span>
+        <span>SINNERS</span>
+        <span class="dot">◆</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- NOW SHOWING -->
+  <section class="section-films">
+    <div class="container">
+      <div class="sec-header">
+        <h2 class="sec-title">SEDANG TAYANG</h2>
+        <a href="tayang.html" class="sec-more">Lihat semua →</a>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-6 col-lg-3">
+          <a href="pesan.html" class="film-card">
+            <div class="film-poster" style="background: linear-gradient(135deg,#1a0a00,#8b0000);">
+              <div class="film-rating">17+</div>
+              <div class="film-genre">ACTION</div>
+              <div class="film-overlay"><span>PESAN →</span></div>
+            </div>
+            <div class="film-info">
+              <h4>Avengers: Doomsday</h4>
+              <p>Robert Downey Jr. · 2h 45m</p>
+              <div class="film-stars">★★★★★</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <a href="pesan.html" class="film-card">
+            <div class="film-poster" style="background: linear-gradient(135deg,#000a1a,#003366);">
+              <div class="film-rating">13+</div>
+              <div class="film-genre">SCI-FI</div>
+              <div class="film-overlay"><span>PESAN →</span></div>
+            </div>
+            <div class="film-info">
+              <h4>Superman 2025</h4>
+              <p>David Corenswet · 2h 10m</p>
+              <div class="film-stars">★★★★☆</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <a href="pesan.html" class="film-card">
+            <div class="film-poster" style="background: linear-gradient(135deg,#0a0a00,#554400);">
+              <div class="film-rating">SU</div>
+              <div class="film-genre">THRILLER</div>
+              <div class="film-overlay"><span>PESAN →</span></div>
+            </div>
+            <div class="film-info">
+              <h4>Mission: Impossible 8</h4>
+              <p>Tom Cruise · 2h 55m</p>
+              <div class="film-stars">★★★★★</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <a href="pesan.html" class="film-card">
+            <div class="film-poster" style="background: linear-gradient(135deg,#00100a,#003322);">
+              <div class="film-rating">13+</div>
+              <div class="film-genre">DRAMA</div>
+              <div class="film-overlay"><span>PESAN →</span></div>
+            </div>
+            <div class="film-info">
+              <h4>Sinners</h4>
+              <p>Michael B. Jordan · 2h 17m</p>
+              <div class="film-stars">★★★★★</div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTERNAL LINKS / INFO -->
+  <section class="section-info">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <h3 class="info-title">Kenapa CINEMAXE?</h3>
+          <div class="info-list">
+            <div class="info-item"><span class="ii-num">01</span><span>Kursi premium dolby atmos</span></div>
+            <div class="info-item"><span class="ii-num">02</span><span>Pemesanan online tanpa antri</span></div>
+            <div class="info-item"><span class="ii-num">03</span><span>Tiket digital langsung ke HP</span></div>
+            <div class="info-item"><span class="ii-num">04</span><span>Reschedule mudah hingga 2 jam sebelum tayang</span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="ext-box">
+            <p class="ext-label">SUMBER & PARTNER</p>
+            <div class="d-flex flex-wrap gap-3 mt-3">
+              <a href="https://www.imdb.com" target="_blank" class="ext-pill">🎬 IMDb</a>
+              <a href="https://www.rottentomatoes.com" target="_blank" class="ext-pill">🍅 Rotten Tomatoes</a>
+              <a href="https://www.cgv.id" target="_blank" class="ext-pill">🎭 CGV Indonesia</a>
+              <a href="https://www.xxlmovie.id" target="_blank" class="ext-pill">🎞 XXI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILM STRIP DECO BOTTOM -->
+  <div class="filmstrip bottom" aria-hidden="true">
+    <div class="filmstrip-holes"></div>
+    <div class="filmstrip-track"><span>ENJOY THE SHOW</span><span>★</span><span>ENJOY THE SHOW</span><span>★</span><span>ENJOY THE SHOW</span><span>★</span><span>ENJOY THE SHOW</span><span>★</span><span>ENJOY THE SHOW</span></div>
+    <div class="filmstrip-holes"></div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <span class="footer-brand">CINEMAXE</span>
+      <span class="footer-copy">© 2025 · Tugas Praktikum PDW Modul 7</span>
+      <div class="d-flex gap-3">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="tayang.html" class="footer-link">Jadwal Tayang</a>
+        <a href="pesan.html" class="footer-link">Pesan</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
