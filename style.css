@@ -1111,3 +1111,5 @@ body {
   transition: color .2s;
 }
 .footer-link:hover { color: var(--gold); }
+/* alias for tayang page */
+.tayang-section { padding: 60px 0 80px; }
